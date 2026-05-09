@@ -141,7 +141,6 @@ public static unsafe class AtkUldPartExtensions {
         buffer.Clear();
         var bytePointer = (byte*)Unsafe.AsPointer(ref buffer[0]);
 
-        var textureScale = textureManager->DefaultTextureScale;
         var targetFolder = (IconSubFolder)textureManager->IconLanguage;
 
         // Try to resolve the path using the current language
